@@ -1,7 +1,5 @@
 # work-api
 trabalho
-atualiza 
-teste
 
 git pull | conferir aualizações
 git status 
