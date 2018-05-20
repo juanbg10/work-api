@@ -1,14 +1,28 @@
+
+header{
+    background-color: #294A66;
+    text-align: center;
+}
+
+.space{
+
+    height: 100%;
+    width: 100%;
+}
+
 body{
     background-color: #000;
     color: #fff;
 }
 
-header{
-    background-color: #294A66;
+#logo{
+    float:left;
+    padding: 2%;
 }
     
     #menu{
         display: inline;
+        padding: 1% 5%;
     }
     
     #menu ul{
@@ -19,20 +33,20 @@ header{
     
     #menu ul li{
         position: relative;
-        display: block;
+        display: inline;
     }
     
     #menu ul li a{
         color: #fff;
         text-decoration: none;
         margin: 0.26em;
-        display: block;
+        display: inline-block;
         transition:background 0.2s linear 0s, color 0.2s linear 0s;
         line-height:1.7em;
         z-index: 1;
         text-align:center;
+        padding: 0.4%;
     }
-    
     
     #menu li ul{
 		display: none;
@@ -60,4 +74,36 @@ header{
     #menu li:hover a{
 		color: #fff;
 		border-bottom: 0.0em solid #fff;
+    }
+  
+#div1{
+    background-color: blue;
+    width: 12%;
+	height: 70em;
+    float: left;
+
+}  
+
+main{
+	background-color: green;   
+    float: left;
+    width: 70%;
+	height: 70em;
+
+}
+    
+aside{
+    background-color: yellow;
+    width: 18%;
+    height: 70em;
+	float: left;
+}
+    
+    
+    
+footer{
+    float: right;
+    width: 100%;
+    text-align: center;
+    border-top: 0.07em solid red;
     }
