@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 header{
-    background-color: #294A66;
     text-align: center;
+    border-bottom:  0.07em solid red;
 }
 
 #imglogo{
@@ -19,6 +20,7 @@ header{
 body{
     background-color: #000;
     color: #fff;
+    font-family: 'ubunto', verdana;
 }
 
 #logo{
@@ -35,7 +37,7 @@ body{
     
     #menu ul{
         list-style: none;
-        margin: 0;
+        margin: 0 3% 0 0;
         padding: 0;
     }
     
@@ -50,12 +52,13 @@ body{
         margin: 0.26em;
         display: inline-block;
         transition:background 0.2s linear 0s, color 0.2s linear 0s;
+        transition:border-bottom 0.2s linear 0s, color 0.2s linear 0s;
         line-height:1.7em;
         z-index: 1;
         text-align:center;
         padding: 0.4% 3%;
         margin: 1% 4%;
-        border-bottom: 0.07em solid #294A66;
+        border-bottom: 0.07em solid #000;
     }
     
     #menu li ul{
@@ -67,6 +70,7 @@ body{
 		color: red;
 		text-align:center;
 		transition:background 0.2s linear 0s, color 0.2s linear 0s;
+		transition:border-bottom 0.2s linear 0s, color 0.2s linear 0s;
 		border-bottom: 0.07em solid red;
 	}
 
@@ -89,38 +93,49 @@ body{
   
 /*-------------------------------------------------------------*/
 #div1{
-    background-color: blue;
-    width: 12%;
+    background-color: #fff;
+    color: #000;
+    width: 13.5%;
 	height: 70em;
     float: left;
 
 }  
 
 main{
-	background-color: green;   
+	background-color: red;   
     float: left;
-    width: 70%;
+    width: 65%;
 	height: 70em;
+	margin-left: 0.17%;
+	
 
 }
     
 aside{
-    background-color: yellow;
-    width: 18%;
+    background-color: #fff;
+    width: 21%;
     height: 70em;
 	float: left;
+	margin-left: 0.17%;
 }
-    
-    
+
+#ttlogo{
+    width: 15%;
+    padding:0.7%;
+}
+
+#twitter{
+    width: 100%;
+    padding: 25%;
+}
     
 footer{
     float: right;
+    height:4em;
     width: 100%;
     text-align: center;
     border-top: 0.07em solid red;
     }
-    
-    
     
 /*-----------------------------SLIDER-----------------------------*/
 
@@ -130,11 +145,13 @@ footer{
 
     z-index:-1
 }
+
 #backSlider img{
     position:absolute;
     width:100%;
     z-index:1
 }
+
 #backSlider img.active{
     z-index:3
 }
