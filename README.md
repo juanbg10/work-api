@@ -1,7 +1,7 @@
 work-api
 trabalho
 
-git pull | conferir aualizações
+git pull | conferir atualizações
 git status 
 git push | direciona ao git
 git add
