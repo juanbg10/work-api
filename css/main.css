@@ -13,7 +13,10 @@ header{
     padding: 0;
 }
 
-#exemplo{}
+#exemplo{
+    backface-visibility: hidden;
+    color: !important;
+}
 
 .space{
 
