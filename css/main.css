@@ -51,6 +51,7 @@ p a:hover {
 abbr {
     text-decoration: none;
 }
+
 /*#logo{
     float:left;
     padding: 0%;
@@ -87,6 +88,8 @@ abbr {
         padding: 0.4% 3%;
         margin: 1% 4%;
         border-bottom: 0.07em solid #000;
+    
+        font-size:40px;
     }
     
     #menu li ul{
@@ -136,13 +139,11 @@ abbr {
 }
 
 main{
-	background-color: blue;   
+	background-color: gray;   
     float: left;
     width: 57.5%;
 	height: 70em;
 	margin-left: 0.17%;
-	
-
 }
     
 aside{

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
+<html lang="pt-br">
     
 <head>
+    <title>Trabalho API</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trabalho API</title>
+    <!--<link href="css/slide.css" rel="stylesheet" type="text/css">-->
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/mobile.css" rel="stylesheet">
     <link rel="icon" href="img/.ico" type="">
-    <script type="text/javascript" src="js/move.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/slide.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/slide.css">
+    <!--<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>-->
     <script type="text/javascript" src="js/knockout-3.4.2"></script>
- 
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/move.js"></script>
+    <!-- Scripts adicionados Carousel-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+        .mySlides {display:none}
+    </style>
 </head>    
 
 <body>
@@ -33,63 +39,98 @@
         </nav>
     </header>
 <div class="space">
+
 <!--____________________PARTE1____________________-->        
-    <div id="div1">
-<script>
-/*
+
+<div id="div1">
+    
+    <script>
+    /*
      * descrição: API Google Search
      * autor: Juan Bertoluzzi Garcia
      * entrada: Nome para busca.
      * saida: Assuntos com o nome para busca.
     */
-  (function() {
-    var cx = '007833354045512050991:kcbhcpzkuai';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-</br>
-<div style="padding:2%;">
-<p>First name: <input data-bind="value: firstName" /></p>
-<p>Last name: <input data-bind="value: lastName" /></p>
-</div>
+    (function() {
+         var cx = '007833354045512050991:kcbhcpzkuai';
+         var gcse = document.createElement('script');
+         gcse.type = 'text/javascript';
+         gcse.async = true;
+         gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(gcse, s);
+         })();
+    </script>
+        <gcse:search></gcse:search>
+        
+        <br>
+    <div style="padding:2%;">
+        <p>First name: <input data-bind="value: firstName" /></p>
+        <p>Last name: <input data-bind="value: lastName" /></p>
     </div>
+</div>
   
 <!--___________________PARTE2_____________________-->    
-    <main id="div2">
-        <div id="background_cycler" >
-            <script type="text/javascript">
-                $('#background_cycler').hide();
-            </script>
-			
-            <img  class="active" src="img/CINE.png" />
-            <img  src="img/JOGOS.png" />
-            <img  src="img/MUSICA.jpg" />
+    
+<main id="div2">
+    <div class="w3-container">
+        <h2>Slideshow Indicators</h2>
+            <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+    </div>
+
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="mySlides" src="img2/CINE.png" style="width:100%">
+        <img class="mySlides" src="img2/MUSICA.png" style="width:100%">
+        <img class="mySlides" src="img2/JOGOS.png" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
         </div>
-            <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
-            <p>"Tá gravando?" é um projeto criado pelos alunos da FATEC Rubens Lara; <strong>Allan S. Bezerra, Juan Bertoluzzi e Lucas Rocha</strong>. Incialmente abordaremos diversos assuntos; como cinema, jogos, músicas, series e afins. Inspirados por sites como <strong><a href="https://jovemnerd.com.br/"><abbr title="Site do Jovem Nerd">Jovem Nerd</abbr></a></strong> e <strong><a href="http://99vidas.com.br/"><abbr title="Site do 99vidas">99vidas<abbr></abbr></a></strong>, temos o intuíto de trazer informação e um conteúdo objetivo, com uma dose de humor inteligente <strike>ou não</strike>.</p>
-        
-            <img class="active" src="img/mockup.png" />
-            <img src="img/" />
-            <img src="img/" />
-        </div>
-      
-    </main>
+    </div>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+    showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " w3-white";
+                }
+</script>
+            
+    <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
+        <p>"Tá gravando?" é um projeto criado pelos alunos da FATEC Rubens Lara; <strong>Allan S. Bezerra, Juan Bertoluzzi e Lucas Rocha</strong>. Incialmente abordaremos diversos assuntos; como cinema, jogos, músicas, series e afins. Inspirados por sites como <strong><a href="https://jovemnerd.com.br/"><abbr title="Site do Jovem Nerd">Jovem Nerd</abbr></a></strong> e <strong><a href="http://99vidas.com.br/"><abbr title="Site do 99vidas">99vidas</abbr></a></strong>, temos o intuíto de trazer informação e um conteúdo objetivo, com uma dose de humor inteligente <strike>ou não</strike>.</p>
+    
+</main>
 <!--___________________PARTE3_____________________-->
     <aside id="div2">
 
     </aside>
     
-
-
-</div>
     <footer>
          <p>©2018 Undefined | Developed by SI Students | Santos - SP</p>
     </footer>
 </body>
-    </html>
+</html>
