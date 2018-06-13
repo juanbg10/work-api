@@ -2,22 +2,18 @@
 
 header{
     text-align: center;
-    border-bottom:  0.07em solid red;
+    border-bottom:  0.07em solid #0060ca;
     padding-bottom: 3%;
 }
 
 #imglogo{
-    width: 15%;
+    width: 22%;
     float: left;
-    margin: -1% 0% 0% 3%;
+    margin: 1% 0% 0% 3%;
     padding: 0;
 }
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 944c6c6327a6549e7179cdc6d07fc4141d7bf93f
 .space{
 
     height: 100%;
@@ -74,11 +70,11 @@ body{
 
     #menu ul li a:hover{
 		background: none;
-		color: red;
+		color: #0060ca;
 		text-align:center;
 		transition:background 0.2s linear 0s, color 0.2s linear 0s;
 		transition:border-bottom 0.2s linear 0s, color 0.2s linear 0s;
-		border-bottom: 0.07em solid red;
+		border-bottom: 0.07em solid #0060ca;
 	}
 
     #menu li:hover ul{
@@ -141,7 +137,7 @@ footer{
     height:4em;
     width: 100%;
     text-align: center;
-    border-top: 0.07em solid red;
+    border-top: 0.07em solid #0060ca;
     }
     
 /*-----------------------------SLIDER-----------------------------*/
