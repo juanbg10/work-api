@@ -15,7 +15,6 @@ header{
 
 
 .space{
-
     height: 100%;
     width: 100%;
 }
@@ -130,8 +129,14 @@ abbr {
 
 }  
 
+#div1 a {
+    display: block;
+    line-height: 3em;
+    text-align:center;
+}
+
 main{
-	background-color: #000;   
+	background-color: blue;   
     float: left;
     width: 57.5%;
 	height: 70em;
@@ -165,22 +170,3 @@ footer{
     text-align: center;
     border-top: 0.07em solid #0060ca;
     }
-    
-/*-----------------------------SLIDER-----------------------------*/
-
-#backSLider{
-    width:100%;
-    position:absolute;
-    z-index:-1;
-}
-
-#backSlider img{
-    position:absolute;
-    width:40%;
-    z-index:1
-
-}
-
-#backSlider img.active{
-    z-index:3
-}
