@@ -19,3 +19,7 @@ function main(){
 	$('#backSlider').fadeIn(1500);
     setInterval('slider()', 3000);
 }
+
+
+
+

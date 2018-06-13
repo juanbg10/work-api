@@ -13,10 +13,7 @@ header{
     padding: 0;
 }
 
-#exemplo{
-    backface-visibility: hidden;
-    color: !important;
-}
+
 
 .space{
 
@@ -102,7 +99,7 @@ body{
 #div1{
     background-color: #fff;
     color: #000;
-    width: 13.5%;
+    width: 21%;
 	height: 70em;
     float: left;
 
@@ -111,7 +108,7 @@ body{
 main{
 	background-color: #000;   
     float: left;
-    width: 65%;
+    width: 57.5%;
 	height: 70em;
 	margin-left: 0.17%;
 	

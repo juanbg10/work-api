@@ -6,4 +6,4 @@ git status
 git commit -m "descricao"
 git push | direciona ao git
 git add
-ctrl C = bug
+ctrl C = bug 
