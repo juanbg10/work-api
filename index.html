@@ -8,11 +8,11 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/mobile.css" rel="stylesheet">
     <link rel="icon" href="img/.ico" type="">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <script type="text/javascript" src="js/move.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/slide.js"></script>
     <link rel="stylesheet" type="text/css" href="css/slide.css">
+    <script type="text/javascript" src="js/knockout-3.4.2"></script>
  
 </head>    
 
@@ -36,7 +36,12 @@
 <!--____________________PARTE1____________________-->        
     <div id="div1">
 <script>
-  //Juan 
+/*
+     * descrição: API Google Search
+     * autor: Juan Bertoluzzi Garcia
+     * entrada: Nome para busca.
+     * saida: Assuntos com o nome para busca.
+    */
   (function() {
     var cx = '007833354045512050991:kcbhcpzkuai';
     var gcse = document.createElement('script');
@@ -48,14 +53,11 @@
   })();
 </script>
 <gcse:search></gcse:search>
-    <a href="">LINK</a>
-    <a href="">LINK</a>
-    <a href="">LINK</a>
-    <a href="">LINK</a>
-    <a href="">LINK</a>
-    <a href="">LINK</a>
-    <a href="">LINK</a>
-    <a href="">LINK</a>
+</br>
+<div style="padding:2%;">
+<p>First name: <input data-bind="value: firstName" /></p>
+<p>Last name: <input data-bind="value: lastName" /></p>
+</div>
     </div>
   
 <!--___________________PARTE2_____________________-->    

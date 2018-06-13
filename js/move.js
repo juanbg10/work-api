@@ -1,26 +1,22 @@
-$(main);
-
-function slider(){
-      var active = $('#backSlider .active');
-      var proxTam = active.next().length
-      var next;
-      if (proxTam > 0) 
-          next = active.next();
-      else 
-         next = $('#backSlider img:first');
-      next.css("z-index",2);
-	  active.fadeOut(1500,function(){
-	    active.css("z-index",1).show().removeClass('active');
-        next.css("z-index",3).addClass('active');
-      });
-}
-
-function main(){
-	$('#backSlider').fadeIn(1500);
-    setInterval('slider()', 3000);
-}
-
-
-
-
-
+var BetterListModel = function () {
+    this.itemToAdd = ko.observable("");
+    this.allItems = ko.observableArray(["Fries", "Eggs Benedict", "Ham", "Cheese"]); // Initial items
+    this.selectedItems = ko.observableArray(["Ham"]);                                // Initial selection
+ 
+    this.addItem = function add() {
+        if ((this.itemToAdd() != "") && (this.allItems.indexOf(this.itemToAdd()) < 0)) // Prevent blanks and duplicates
+            this.allItems.push(this.itemToAdd());
+        this.itemToAdd(""); // Clear the text box
+    };
+ 
+    this.removeSelected = function () {
+        this.allItems.removeAll(this.selectedItems());
+        this.selectedItems([]); // Clear selection
+    };
+ 
+    this.sortItems = function() {
+        this.allItems.sort();
+    };
+};
+ 
+ko.applyBindings(new BetterListModel());
