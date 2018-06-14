@@ -50,6 +50,33 @@ function showDivs(n) {
 /*
  * descrição: Lista de Colaboradores
  * autor: Lucas de Mello Rocha
+ * entrada: click em um botão 
+ * saida: retorna contagem + nova tentativa
+ */
+
+function init(){
+var ClickCounterViewModel = function() {
+    this.numberOfClicks = ko.observable(0);
+ 
+    this.registerClick = function() {
+        this.numberOfClicks(this.numberOfClicks() + 1);
+    };
+ 
+    this.resetClicks = function() {
+        this.numberOfClicks(0);
+    };
+ 
+    this.hasClickedTooManyTimes = ko.computed(function() {
+        return this.numberOfClicks() >= 20;
+    }, this);
+};
+ 
+    ko.applyBindings(new ClickCounterViewModel());
+}
+
+/*
+ * descrição: Lista de Colaboradores
+ * autor: Lucas de Mello Rocha
  * entrada:  
  * saida: 
  */

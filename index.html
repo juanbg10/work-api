@@ -39,7 +39,21 @@
     <script>Api();</script>
     <gcse:search onclick="Api();"></gcse:search>
 </div>
-  
+
+<div class='liveExample' id="live"> 
+    <div>Are you stressed? <br><span data-bind='text: numberOfClicks'>&nbsp;</span> times</div>
+    <button data-bind='click: registerClick, disable: hasClickedTooManyTimes'>ANTI STRESS</button>
+    <div data-bind='visible: hasClickedTooManyTimes'>
+    Still man, bro?
+    <br>
+    <button data-bind='click: resetClicks'>Try again!</button>
+    </div>
+</div>
+
+<script>
+    init();
+</script>
+
 <!--___________________PARTE2_____________________-->    
 <main id="div2">
     <br>
@@ -55,8 +69,10 @@
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
         </div>
     </div>
+    
     <script>slider();</script>
     <script>showDivs();</script>
+    
     <div class="paragrafo">          
         <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
         <p>"Tá gravando?" é um projeto criado pelos alunos da FATEC Rubens Lara; <strong>Allan S. Bezerra, Juan Bertoluzzi e Lucas Rocha</strong>. Incialmente abordaremos diversos assuntos; como cinema, jogos, músicas, series e afins. Inspirados por sites como <strong><a href="https://jovemnerd.com.br/"><abbr title="Site do Jovem Nerd">Jovem Nerd</abbr></a></strong> e <strong><a href="http://99vidas.com.br/"><abbr title="Site do 99vidas">99vidas</abbr></a></strong>, temos o intuíto de trazer informação e um conteúdo objetivo, com uma dose de humor inteligente <strike>ou não</strike>.</p>
@@ -68,6 +84,7 @@
         <div class="zoom"><a href=""><img src="img/music.jpg" alt="" id="terceiro" ></a></div>
         <div class="zoom"><a href=""><img src="img/HQ.jpg" alt="" id="quarto"></a></div>
     </div>
+    
 </main>
 
 <!--___________________PARTE3_____________________-->
