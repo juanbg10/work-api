@@ -13,6 +13,7 @@ function Api() {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
 }
+// ----------------------------------------------------------
 
 /*
  * descrição: Slide de imagens
@@ -20,6 +21,7 @@ function Api() {
  * entrada:  
  * saida: 
  */
+ 
 var slideIndex = 1;
 showDivs(slideIndex);
 
