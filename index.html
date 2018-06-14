@@ -2,18 +2,11 @@
 <html lang="pt-br">
 <head>
     <title>Trabalho API</title>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link href="css/slide.css" rel="stylesheet" type="text/css">-->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/.ico" type="">
-    <!--<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
-    <script type="text/javascript" src="js/slide.js"></script>
     <script type="text/javascript" src="js/move.js"></script>
-    <!-- Scripts adicionados Carousel-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>    
 
 <body>
@@ -37,18 +30,9 @@
 <div id="div1">
     <br>
     <script>Api();</script>
-    <gcse:search onclick="Api();"></gcse:search>
+    <gcse:search id="botao"></gcse:search>
 </div>
 
-<div class='liveExample' id="live"> 
-    <div>Are you stressed? <br><span data-bind='text: numberOfClicks'>&nbsp;</span> times</div>
-    <button data-bind='click: registerClick, disable: hasClickedTooManyTimes'>ANTI STRESS</button>
-    <div data-bind='visible: hasClickedTooManyTimes'>
-    Still man, bro?
-    <br>
-    <button data-bind='click: resetClicks'>Try again!</button>
-    </div>
-</div>
 
 <script>
     init();
@@ -58,9 +42,9 @@
 <main id="div2">
     <br>
     <div class="w3-content w3-display-container" style="max-width:800px">
-        <img class="mySlides" src="img2/CINE.png" style="width:100%">
-        <img class="mySlides" src="img2/MUSICA.png" style="width:100%">
-        <img class="mySlides" src="img2/JOGOS.png" style="width:100%">
+        <img class="mySlides" src="img2/CINE.png" style="width:100%" alt="cinema">
+        <img class="mySlides" src="img2/MUSICA.png" style="width:100%" alt="musica">
+        <img class="mySlides" src="img2/JOGOS.png" style="width:100%" alt="jogos">
         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
             <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
             <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
@@ -88,7 +72,7 @@
 </main>
 
 <!--___________________PARTE3_____________________-->
-<aside id="div2">
+<aside>
 
 </aside>
 
