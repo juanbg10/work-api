@@ -52,6 +52,11 @@ abbr {
     text-decoration: none;
 }
 
+.paragrafo {
+    padding: 2%;
+}
+
+
 /*#logo{
     float:left;
     padding: 0%;

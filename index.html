@@ -44,24 +44,8 @@
 
 <div id="div1">
     
-    <script>
-    /*
-     * descrição: API Google Search
-     * autor: Juan Bertoluzzi Garcia
-     * entrada: Nome para busca.
-     * saida: Assuntos com o nome para busca.
-    */
-    (function() {
-         var cx = '007833354045512050991:kcbhcpzkuai';
-         var gcse = document.createElement('script');
-         gcse.type = 'text/javascript';
-         gcse.async = true;
-         gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(gcse, s);
-         })();
-    </script>
-        <gcse:search></gcse:search>
+<script>Api();</script>
+        <gcse:search onclick="Api();"></gcse:search>
         
         <br>
     <div style="padding:2%;">
@@ -115,9 +99,10 @@
                 dots[slideIndex-1].className += " w3-white";
                 }
 </script>
-            
+  <div class="paragrafo">          
     <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
         <p>"Tá gravando?" é um projeto criado pelos alunos da FATEC Rubens Lara; <strong>Allan S. Bezerra, Juan Bertoluzzi e Lucas Rocha</strong>. Incialmente abordaremos diversos assuntos; como cinema, jogos, músicas, series e afins. Inspirados por sites como <strong><a href="https://jovemnerd.com.br/"><abbr title="Site do Jovem Nerd">Jovem Nerd</abbr></a></strong> e <strong><a href="http://99vidas.com.br/"><abbr title="Site do 99vidas">99vidas</abbr></a></strong>, temos o intuíto de trazer informação e um conteúdo objetivo, com uma dose de humor inteligente <strike>ou não</strike>.</p>
+    </div>
     
 </main>
 </div>

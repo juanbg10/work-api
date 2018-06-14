@@ -1,22 +1,17 @@
-var BetterListModel = function () {
-    this.itemToAdd = ko.observable("");
-    this.allItems = ko.observableArray(["Fries", "Eggs Benedict", "Ham", "Cheese"]); // Initial items
-    this.selectedItems = ko.observableArray(["Ham"]);                                // Initial selection
- 
-    this.addItem = function add() {
-        if ((this.itemToAdd() != "") && (this.allItems.indexOf(this.itemToAdd()) < 0)) // Prevent blanks and duplicates
-            this.allItems.push(this.itemToAdd());
-        this.itemToAdd(""); // Clear the text box
-    };
- 
-    this.removeSelected = function () {
-        this.allItems.removeAll(this.selectedItems());
-        this.selectedItems([]); // Clear selection
-    };
- 
-    this.sortItems = function() {
-        this.allItems.sort();
-    };
-};
- 
-ko.applyBindings(new BetterListModel());
+
+    /*
+     * descrição: API Google Search
+     * autor: Juan Bertoluzzi Garcia
+     * entrada: Nome para busca.
+     * saida: Assuntos com o nome para busca.
+     */
+    function Api() {
+         var cx = '007833354045512050991:kcbhcpzkuai';
+         var gcse = document.createElement('script');
+         gcse.type = 'text/javascript';
+         gcse.async = true;
+         gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(gcse, s);
+         };
+  
