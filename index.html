@@ -71,34 +71,8 @@
         </div>
     </div>
 
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+<script> slider() </script>
 
-    function plusDivs(n) {
-    showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-    showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = x.length}
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" w3-white", "");
-                }
-                x[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " w3-white";
-                }
-</script>
   <div class="paragrafo">          
     <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
         <p>"Tá gravando?" é um projeto criado pelos alunos da FATEC Rubens Lara; <strong>Allan S. Bezerra, Juan Bertoluzzi e Lucas Rocha</strong>. Incialmente abordaremos diversos assuntos; como cinema, jogos, músicas, series e afins. Inspirados por sites como <strong><a href="https://jovemnerd.com.br/"><abbr title="Site do Jovem Nerd">Jovem Nerd</abbr></a></strong> e <strong><a href="http://99vidas.com.br/"><abbr title="Site do 99vidas">99vidas</abbr></a></strong>, temos o intuíto de trazer informação e um conteúdo objetivo, com uma dose de humor inteligente <strike>ou não</strike>.</p>
