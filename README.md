@@ -1,6 +1,7 @@
 work-api
 trabalho
 
+git checkout ---> bug pull
 git pull | conferir atualizações
 git status 
 git commit -m "descricao"

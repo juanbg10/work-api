@@ -88,8 +88,7 @@ abbr {
         padding: 0.4% 3%;
         margin: 1% 4%;
         border-bottom: 0.07em solid #000;
-    
-        font-size:40px;
+        font-size:1.7em;
     }
     
     #menu li ul{
@@ -171,6 +170,10 @@ footer{
     text-align: center;
     border-top: 0.07em solid #0060ca;
     }
+    
+#foot{
+    text-align: center;
+}
 
 /*--------------LATERAL ESQUERDA--------------*/
 
