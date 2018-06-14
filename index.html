@@ -15,11 +15,6 @@
     <script type="text/javascript" src="js/move.js"></script>
     <!-- Scripts adicionados Carousel-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        .w3-left, .w3-right, .w3-badge {cursor:pointer}
-        .w3-badge {height:13px;width:13px;padding:0}
-        .mySlides {display:none}
-    </style>
 </head>    
 
 <body>
@@ -71,7 +66,7 @@
         </div>
     </div>
 
-<script> slider() </script>
+<script> slider(); </script>
 
   <div class="paragrafo">          
     <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
@@ -82,7 +77,15 @@
 </div>
 <!--___________________PARTE3_____________________-->
     <aside id="div2">
-
+        <script>var url = 'https://newsapi.org/v2/top-headlines?' +
+          'country=us&' +
+          'apiKey=65e6ee874fc844e1a8fa3e6646024c86';
+var req = new Request(url);
+fetch(req)
+    .then(function(response) {
+        console.log(response.json());
+    })
+</script>
     </aside>
     
     <footer>
