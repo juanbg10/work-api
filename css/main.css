@@ -145,9 +145,8 @@ abbr {
 main{
 	background-color: gray;   
     float: left;
-    width: 57.5%;
+    width: 58%;
 	height: 70em;
-	margin-left: 0.17%;
 }
     
 aside{
@@ -155,7 +154,6 @@ aside{
     width: 21%;
     height: 70em;
 	float: left;
-	margin-left: 0.17%;
 }
 
 #ttlogo{
