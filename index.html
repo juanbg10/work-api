@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
 <head>
     <title>Trabalho API</title>
 
@@ -18,41 +17,30 @@
 </head>    
 
 <body>
-    <header>
-        <div id="logo">
-           <a href="index.html"><img src="img/logo2.png" alt="logo" id="imglogo"></a> 
-        </div>
-        
-        <nav id="menu">
-            <ul>
-                <li><a href="">Cinema</a></li>
-                <li>|</li>
-                <li><a href="">Música</a></li>
-                <li>|</li>
-                <li><a href="">Outros</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--____________________HEADER____________________-->        
+<header>
+    <div id="logo">
+        <a href="index.html"><img src="img/logo2.png" alt="logo" id="imglogo"></a> 
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="">Cinema</a></li>
+            <li>|</li>
+            <li><a href="">Música</a></li>
+            <li>|</li>
+            <li><a href="">Outros</a></li>
+        </ul>
+    </nav>
+</header>
 
 <!--____________________PARTE1____________________-->        
-
 <div id="div1">
-    
-<script>Api();</script>
-        <gcse:search onclick="Api();"></gcse:search>
-        
-        <br>
-    <div style="padding:2%;">
-        <p>First name: <input data-bind="value: firstName" /></p>
-        <p>Last name: <input data-bind="value: lastName" /></p>
-        <h2>Hello, <span data-bind="text: fullName"> </span>!</h2>
-    </div>
+    <script>Api();</script>
+    <gcse:search onclick="Api();"></gcse:search>
 </div>
   
 <!--___________________PARTE2_____________________-->    
-    
 <main id="div2">
-  
     <div class="w3-content w3-display-container" style="max-width:800px">
         <img class="mySlides" src="img2/CINE.png" style="width:100%">
         <img class="mySlides" src="img2/MUSICA.png" style="width:100%">
@@ -65,34 +53,23 @@
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
         </div>
     </div>
-<script> slider(); </script>
-
-<script>
-showDivs();
-</script>
-  <div class="paragrafo">          
-    <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
+    <script>slider();</script>
+    <script>showDivs();</script>
+    <div class="paragrafo">          
+        <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
         <p>"Tá gravando?" é um projeto criado pelos alunos da FATEC Rubens Lara; <strong>Allan S. Bezerra, Juan Bertoluzzi e Lucas Rocha</strong>. Incialmente abordaremos diversos assuntos; como cinema, jogos, músicas, series e afins. Inspirados por sites como <strong><a href="https://jovemnerd.com.br/"><abbr title="Site do Jovem Nerd">Jovem Nerd</abbr></a></strong> e <strong><a href="http://99vidas.com.br/"><abbr title="Site do 99vidas">99vidas</abbr></a></strong>, temos o intuíto de trazer informação e um conteúdo objetivo, com uma dose de humor inteligente <strike>ou não</strike>.</p>
     </div>
-    
 </main>
-</div>
+
 <!--___________________PARTE3_____________________-->
-    <aside id="div2">
-        <script>var url = 'https://newsapi.org/v2/top-headlines?' +
-          'country=us&' +
-          'apiKey=65e6ee874fc844e1a8fa3e6646024c86';
-var req = new Request(url);
-fetch(req)
-    .then(function(response) {
-        console.log(response.json());
-    })
-</script>
-    </aside>
-    
-    <footer>
-         <p id="foot">©2018 Undefined | Developed by SI Students | Santos - SP</p>
-    </footer>
-    
+<aside id="div2">
+
+</aside>
+
+<!--___________________FOOTER_____________________-->
+<footer>
+    <p id="foot">©2018 Undefined | Developed by SI Students | Santos - SP</p>
+</footer>
+
 </body>
 </html>
