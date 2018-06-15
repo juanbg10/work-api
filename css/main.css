@@ -223,4 +223,7 @@ footer{
 #contato{
     padding:4%;
     z-index:1;
+    background-color: #ababab;
+    margin: 2%;
+    border-radius: 2%;
 }
