@@ -55,7 +55,6 @@ abbr {
     padding: 2%;
 }
 
-
 /*#logo{
     float:left;
     padding: 0%;
@@ -168,16 +167,18 @@ abbr {
     	transition: 0.75s ease-in-out;
     	transition-delay: 0.5s; 
 }
+
 .zoom:hover{
     	-webkit-transform: scale(1.1);
     	transform: scale(1.1);
 }
 /*------------------------------------------------------------*/
+
 #div1{
     background-color: #fff;
     color: #000;
-    width: 20%;
-	height: 80em;
+    width: 21%;
+	height: 90em;
     float: left;
 }  
 
@@ -191,26 +192,16 @@ main{
 	background-color: gray;   
     float: left;
     width: 58%;
-	height: 80em;
+	height: 90em;
 }
     
 aside{
     background-color: #fff;
     width: 21%;
-    height: 80em;
+    height: 90em;
 	float: left;
 }
 
-#ttlogo{
-    width: 15%;
-    padding:0.7%;
-}
-
-#twitter{
-    width: 100%;
-    padding: 25%;
-}
-    
 footer{
     float: right;
     height:4em;
@@ -228,10 +219,8 @@ footer{
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 .mySlides {display:none}
-        
-
-.liveExample { padding: 0; margin:0; background-color: gray; border: 1px solid #CCC; max-width: 655px;}
-.liveExample b { font-weight: bold; }
-/*.liveExample p { margin-top: 0.9em; margin-bottom: 0.9em; }*/
-.liveExample select[multiple] { width: 100%; height: 8em; }
-/*.liveExample h2 { margin-top: 0.4em; }*/
+    
+#contato{
+    padding:4%;
+    z-index:1;
+}
