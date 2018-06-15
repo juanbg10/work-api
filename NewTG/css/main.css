@@ -1,0 +1,274 @@
+h1 {
+	margin-bottom:2%;
+	color:#DAA520;
+	text-align: center;
+}
+
+h3,h4 {
+	text-align: center;
+}
+
+p {
+    font-size: 0.9em;
+    line-height:1.7em;
+    text-align:justify;
+}
+
+p strong {
+    color:#6495ED;
+}
+
+p a {
+    text-decoration: none;
+    color:#6495ED;
+}
+
+p a:hover {
+    color:#00BFFF;
+}
+
+body{
+	font-family:Verdana,sans-serif;
+	font-size:1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:95%;
+	/*max-width:1240px;*/
+	max-width: 1680px;
+}
+	
+ul,li,a{
+	list-style-type:none;
+	margin-bottom:25%;
+	text-decoration:none;
+}
+	
+nav,aside, main{
+	margin-top:2%;
+	margin-bottom:2%;
+	border-radius:0.5em;
+}
+
+nav {
+	width:18%;
+	padding:1%;
+	height:600px;
+	background-color:#eee;
+	float:left;
+	margin-right:1%;
+}
+
+main {
+	line-height: 1.5em;
+	width:54%;
+	padding:1%;
+	height:auto;
+	background-color:#eee;
+	float:left;
+	margin-right:1%;
+}
+
+section {
+	margin-top:2%;
+	margin-bottom:2%;
+	border-radius:0.5em;
+	line-height: 1.5em;
+	width:54%;
+	padding:1%;
+	height:auto;
+	background-color:#eee;
+	float:left;
+	margin-right:1%;
+}
+
+aside{
+	width:18%;
+	padding:1%;
+	height:auto;
+	background-color:#eee;
+	float:left;
+	margin-right:1%;		
+}
+
+header,footer {
+	text-align:center;
+	background-color:#000;
+	color:#B8860B;
+	width:96%;
+	padding:1%;
+	height:120px;
+	clear:both;
+	border-radius:0.3em;
+}
+
+header h1{
+	width:180px;
+	height:98px;
+}
+
+#menu ul li {
+	color:#DAA520;
+	font-size: 1em;
+	/*background-color: lightgray;*/
+	display: inline-block;
+	margin-left:15%;
+	margin-top:2%;
+}
+
+.propaganda{
+    background-color: gray;
+    width:80%;
+    height: 36%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imglogo{
+    width: 20%;
+    float: left;
+    margin: 0.5% 0% 0% 3%;
+    padding: 0;
+}
+
+#primeiro{
+    width: 50%;
+    height: 50%;
+    background-color: orange;
+    float:left;
+}
+
+#segundo{
+    width: 50%;
+    height: 50%;
+    background-color:red;
+    float:right;
+}
+
+#terceiro{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    float:right;
+}
+
+#quarto{
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    float:right;
+}
+
+.zoom{
+    	-webkit-transition: 0.75s ease-in-out;
+    	-webkit-transition-delay: 1s; 
+    	transition: 0.75s ease-in-out;
+    	transition-delay:ease-in 0.5s; 
+}
+
+.zoom:hover{
+    	-webkit-transform: scale(1.1);
+    	transform: scale(1.1);
+}
+
+/*------------------------------- Click Counter CSS---------------------------*/
+
+#live {
+	font-family: 'Press Start 2P', cursive;
+	text-align:center;
+	line-height:1.5em; 
+	background-color: gray; 
+	border: 0.3em dotted #DAA520; 
+	max-width: 655px;
+}
+
+#live div {
+	margin-top: 5%;
+}
+
+#live button {
+	font-family: 'Press Start 2P', cursive;
+	margin-bottom: 10%;
+	padding:5%;
+	border-radius: 2em 2em;
+}
+
+#live span {
+	color:red;
+}
+
+/*-------------------------------- Control Types CSS--------------------------*/
+.liveExample {
+	margin-left:auto; 
+	margin-right:auto; 
+	padding: 1em; 
+	background-color:#EEEEDD; 
+	border: 1px solid #CCC; 
+	max-width: 655px;
+}
+
+.liveExample input { 
+	font-family: Arial; 
+}
+
+.liveExample b { 
+	font-weight: bold; 
+}
+
+.liveExample p { 
+	margin-top: 0.9em; 
+	margin-bottom: 0.9em; 
+}
+
+.liveExample select[multiple] { 
+	width: 100%; 
+	height: 8em; 
+}
+
+.liveExample h2 { 
+	margin-top: 0.4em; 
+}
+
+.readout { 
+	width: 17em; 
+	float: right; 
+}
+
+.readout td { 
+	width: 50%; 
+}
+
+section table {
+	border: 1px solid #CCC; 
+}
+
+section tr { 
+	vertical-align: top;
+	border: 1px solid #CCC; 
+}
+
+section td { 
+	padding: 0.2em 0.2em 0.6em 0.2em; 	
+	border: 1px solid #CCC; 
+}
+
+td.label { 
+	text-align: right; 
+	padding-right: 0.5em;
+}
+
+td label {
+	display: block;
+}
+
+input[type=radio] { 
+	margin: 0 0.25em 0 0.25em 
+}
+
+/*-------------------------------- Contacts editor CSS--------------------------*/
+
+#contato{
+    padding:4%;
+    z-index:1;
+    margin: 2%;
+    border-radius: 2%;
+}

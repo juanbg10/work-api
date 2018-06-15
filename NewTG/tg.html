@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="js/spt.js"></script>
+    <script type="text/javascript" src="js/contato.js"></script>
+	<title>Tá gravando?</title>
+</head>
+	
+<body>
+	
+<header>
+		<div id="logo">
+        	<a href="tg.html"><img src="img/logo2.png" alt="logo" id="imglogo"></a> 
+    	</div>
+        <div id="menu">
+			<ul>
+			<a href="sobre.html"><li>Allan</li></a>
+			<a href="sobre2.html"><li>Lucas</li></a>
+			<a href="sobre3.html"><li>Juan</li></a>
+			</ul>    		
+    	</div>
+</header>
+	
+<!---------------------------------------NAV----------------------------------->
+<nav>
+	<br>
+	<script>Api();</script>
+	<gcse:search onclick="Api();"></gcse:search>
+		<br>
+		<br>
+<!-------------------Click counter example-------------->
+	<div id="live"> 
+    	<div>Are you stressed? <br><span data-bind='text: numberOfClicks'>&nbsp;</span> times</div>
+    		<br>
+    		<button data-bind='click: registerClick, disable: hasClickedTooManyTimes'>ANTI STRESS</button>
+    		<br>
+    	<div data-bind='visible: hasClickedTooManyTimes'>
+    	Still mad, bro?
+    		<br>
+    		<br>
+    	<button data-bind='click: resetClicks'>Try again!</button>
+    	</div>
+	</div>
+
+	<script>
+    	init();
+	</script>
+</nav>
+
+<!---------------------------------------MAIN---------------------------------->
+
+<main>
+ 	<div class="paragrafo">          
+        <h1>Sejam bem vindos ao "Tá gravando?"!</h1>
+        <p>"Tá gravando?" é um projeto criado pelos alunos da FATEC Rubens Lara; <strong>Allan S. Bezerra, Juan Bertoluzzi e Lucas Rocha</strong>. Incialmente abordaremos diversos assuntos; como cinema, jogos, músicas, series e afins. Inspirados por sites como <strong><a href="https://jovemnerd.com.br/"><abbr title="Site do Jovem Nerd">Jovem Nerd</abbr></a></strong> e <strong><a href="http://99vidas.com.br/"><abbr title="Site do 99vidas">99vidas</abbr></a></strong>, temos o intuíto de trazer informação e um conteúdo objetivo, com uma dose de humor inteligente <strike>ou não</strike>.</p>
+    </div>
+    
+    <div class="propaganda">
+        <div class="zoom"><a href=""><img src="img/Marvel.jpg" alt="logo Marvel" id="primeiro"></a></div>
+        <div class="zoom"><a href=""><img src="img/tech.png" alt="" id="segundo"></a></div>
+        <div class="zoom"><a href=""><img src="img/music.jpg" alt="" id="terceiro" ></a></div>
+        <div class="zoom"><a href=""><img src="img/HQ.jpg" alt="" id="quarto"></a></div>
+    </div>
+</main>
+
+<!---------------------------------------ASIDE--------------------------------->
+
+<aside>
+	<h3>Recomendações de podcasts</h3>
+	<ul>
+	    <h4>Nerdcast</h4>
+			<li><a href="https://jovemnerd.com.br/nerdcast/"><img src="img/jn.png" alt="jovem-nerd" width="95%" height="100"></a></li>
+		<h4>99vidas</h4>  
+			<li><a href="http://99vidas.com.br/category/99vidas/"><img  src="img/99vidas.png" alt="99-vidas" width="95%" height="100"></a></li>
+		<h4>Cinema com Rapadura</h4>  
+			<li><a href="https://cinemacomrapadura.com.br/rapaduracast-podcast/"><img  src="img/ccr.png" alt="Cinema-com-Rapadura" width="95%" height="100"></a></li>	
+	</ul>
+
+</aside>
+
+<footer>
+		<small> ©2018 Undefined | Developed by SI Students | Santos - SP</small>
+</footer>
+	
+</body>
+
+</html>

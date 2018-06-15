@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="js/spt.js"></script>
+	<script type="text/javascript" src="js/contato.js"></script>
+	<title>Tá gravando?</title>
+</head>
+	
+<body>
+	
+<header>
+		<div id="logo">
+        	<a href="tg.html"><img src="img/logo2.png" alt="logo" id="imglogo"></a> 
+    	</div>
+        <div id="menu">
+			<ul>
+			<a href="sobre.html"><li>Allan</li></a>
+			<a href="sobre2.html"><li>Lucas</li></a>
+			<a href="sobre3.html"><li>Juan</li></a>
+			</ul>    		
+    	</div>
+</header>
+	
+<!---------------------------------------NAV----------------------------------->
+<nav>
+	<br>
+	<script>Api();</script>
+	<gcse:search onclick="Api();"></gcse:search>
+		<br>
+		<br>
+</nav>
+
+<!---------------------------------------MAIN---------------------------------->
+<section>
+	<!--------------------Control types example-------------->	
+    <div  id="contato">
+<h2>Contatos</h2>
+    <div id='contactsList'>
+        <table class='contactsEditor'>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+            <tbody data-bind="foreach: contacts">
+                <tr>
+                    <td>
+                        <input data-bind='value: firstName'style="margin:0;padding:0;width:60%;">
+                        <div><a href='#' data-bind='click: $root.removeContact' style="text-decoration:none; color:red;">Delete</a></div>
+                    </td>
+                    <td tyle="margin:0;padding:0; width: 10px;">
+                        <table>
+                            <tbody data-bind="foreach: phones">
+                                <tr style="text-align:justify;">
+                                    <td style="text-align:justify;"><input data-bind='value: number'style="margin:0;padding:0;width:90%;"></td>
+                                    <td style="text-align:justify;"><a href='#' data-bind='click: $root.removePhone' style="text-decoration:none; color:red;text-align:justify;">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href='#' data-bind='click: $root.addPhone' style="text-decoration:none;color: green;">Add number</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+    <button data-bind='click: addContact'>Add a contact</button>
+    <button data-bind='click: save, enable: contacts().length > 0'>Save to JSON</button>
+</p>
+ 
+<textarea data-bind='value: lastSavedJson' rows='5' cols='30' > </textarea>
+    </div>
+ 
+</div>  
+
+ <script>contato();</script>
+ 
+</section>
+
+<!---------------------------------------ASIDE--------------------------------->
+
+<aside>
+	<h3>Recomendações de podcasts</h3>
+	<ul>
+		<h4>Nerdcast</h4>
+			<li><a href="https://jovemnerd.com.br/nerdcast/"><img src="img/jn.png" alt="jovem-nerd" width="70%" height="100"></a></li>
+		<h4>99vidas</h4>  
+			<li><a href="http://99vidas.com.br/category/99vidas/"><img  src="img/99vidas.png" alt="99-vidas" width="90%" height="100"></a></li>
+		<h4>Cinema com Rapadura</h4>  
+			<li><a href="https://cinemacomrapadura.com.br/rapaduracast-podcast/"><img  src="img/ccr.png" alt="Cinema-com-Rapadura" width="90%" height="100"></a></li>		
+	</ul>
+	
+</aside>
+
+
+<footer>
+		<small> ©2018 Undefined | Developed by SI Students | Santos - SP</small>
+</footer>
+	
+</body>
+
+</html>
