@@ -45,9 +45,9 @@ var ClickCounterViewModel = function() {
 
 /*
  * descrição: Lista de Colaboradores
- * autor: Allan Silva Bezerra
- * entrada: Click em um botão
- * saida: Retorno de tentativas + Nova tentativa
+ * autor: Lucas de Mello Rocha
+ * entrada:
+ * saida: 
  */
  
  function colab() {

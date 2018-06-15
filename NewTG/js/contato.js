@@ -1,3 +1,10 @@
+/*
+ * descrição: API Google Search
+ * autor: Juan Bertoluzzi Garcia
+ * entrada: registro de contatos
+ * saida: contatos em uma agenda(array)
+ */
+
 var initialData = [
     { firstName: "Steve", lastName: "Rogers", phones: [
         { type: "Mobile", number: "(+44) 121-2121" }]

@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link href="css/main.css" rel="stylesheet">
+	<link href="css/main2.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
@@ -56,8 +56,8 @@
     <div id="colab">
         <form data-bind="submit: addItem">
             <h2>Colaboradores:</h2>
-            <ul data-bind="foreach: items">
-                <li><span data-bind="text: $data"></span></li>
+            <ul data-bind="foreach: items" style="margin-bottom:10%; margin-left:auto;margin-right:auto;text-align:justify;width:15%;padding-left:2%">
+                <li style="margin-bottom:0;"></script>-> <span data-bind="text: $data"></span></li>
             </ul>
             <label for="colaborador">Faça parte dessa equipe</label>
             <input name="colaborador" data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
