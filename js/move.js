@@ -83,6 +83,7 @@ var ClickCounterViewModel = function() {
  * saida: 
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 function colab() {
     var SimpleListModel = function(items) {
         this.items = ko.observableArray(items);
@@ -98,6 +99,8 @@ function colab() {
     ko.applyBindings(new SimpleListModel(["Grazi", "Janaina", "Khayan"]));
 }
 =======
+=======
+>>>>>>> e8d3d8c926b9a30621b2782574bcf5269ca4416e
  
  var initialData = [
     { firstName: "Danny", lastName: "LaRusso", phones: [
@@ -148,5 +151,9 @@ var ContactsModel = function(contacts) {
     self.lastSavedJson = ko.observable("")
 };
  
+<<<<<<< HEAD
+ko.applyBindings(new ContactsModel(initialData));}
+>>>>>>> e8d3d8c926b9a30621b2782574bcf5269ca4416e
+=======
 ko.applyBindings(new ContactsModel(initialData));}
 >>>>>>> e8d3d8c926b9a30621b2782574bcf5269ca4416e
