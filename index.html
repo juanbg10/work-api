@@ -7,6 +7,7 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
     <script type="text/javascript" src="js/move.js"></script>
+    <script type="text/javascript" src="js/contato.js"></script>
 </head>    
 
 <body>
@@ -46,16 +47,16 @@
                         <input data-bind='value: firstName'style="margin:0;padding:0;width:60%;">
                         <div><a href='#' data-bind='click: $root.removeContact' style="text-decoration:none; color:red;">Delete</a></div>
                     </td>
-                    <td>
+                    <td tyle="margin:0;padding:0; width: 10px;">
                         <table>
                             <tbody data-bind="foreach: phones">
                                 <tr style="text-align:justify;">
-                                    <td><input data-bind='value: number'style="margin:0;padding:0;width:80%;"></td>
-                                    <td><a href='#' data-bind='click: $root.removePhone' style="text-decoration:none; color:red;text-align:justify;">Delete</a></td>
+                                    <td style="text-align:justify;"><input data-bind='value: number'style="margin:0;padding:0;width:110%;"></td>
+                                    <td style="text-align:justify;"><a href='#' data-bind='click: $root.removePhone' style="text-decoration:none; color:red;text-align:justify;">Delete</a></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <a href='#' data-bind='click: $root.addPhone'>Add number</a>
+                        <a href='#' data-bind='click: $root.addPhone' style="text-decoration:none;color: green;">Add number</a>
                     </td>
                 </tr>
             </tbody>
