@@ -14,7 +14,6 @@ function Api() {
     s.parentNode.insertBefore(gcse, s);
 }
 // ----------------------------------------------------------
-
 /*
  * descrição: Slide de imagens
  * autor: Allan Silva Bezerra
@@ -48,7 +47,7 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " w3-white";
 }
-
+// ----------------------------------------------------------
 /*
  * descrição: Lista de Colaboradores
  * autor: Lucas de Mello Rocha
@@ -57,33 +56,31 @@ function showDivs(n) {
  */
 
 function init(){
-var ClickCounterViewModel = function() {
-    this.numberOfClicks = ko.observable(0);
- 
-    this.registerClick = function() {
-        this.numberOfClicks(this.numberOfClicks() + 1);
+    var ClickCounterViewModel = function() {
+        this.numberOfClicks = ko.observable(0);
+     
+        this.registerClick = function() {
+            this.numberOfClicks(this.numberOfClicks() + 1);
+        };
+     
+        this.resetClicks = function() {
+            this.numberOfClicks(0);
+        };
+     
+        this.hasClickedTooManyTimes = ko.computed(function() {
+            return this.numberOfClicks() >= 20;
+        }, this);
     };
- 
-    this.resetClicks = function() {
-        this.numberOfClicks(0);
-    };
- 
-    this.hasClickedTooManyTimes = ko.computed(function() {
-        return this.numberOfClicks() >= 20;
-    }, this);
-};
  
     ko.applyBindings(new ClickCounterViewModel());
 }
-
+// ----------------------------------------------------------
 /*
  * descrição: Lista de Colaboradores
  * autor: Lucas de Mello Rocha
  * entrada: 
  * saida: 
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 function colab() {
     var SimpleListModel = function(items) {
         this.items = ko.observableArray(items);
@@ -98,62 +95,51 @@ function colab() {
     
     ko.applyBindings(new SimpleListModel(["Grazi", "Janaina", "Khayan"]));
 }
-=======
-=======
->>>>>>> e8d3d8c926b9a30621b2782574bcf5269ca4416e
- 
- var initialData = [
-    { firstName: "Danny", lastName: "LaRusso", phones: [
-        { type: "Mobile", number: "(555) 121-2121" },
-        { type: "Home", number: "(555) 123-4567"}]
-    },
-    { firstName: "Sensei", lastName: "Miyagi", phones: [
-        { type: "Mobile", number: "(555) 444-2222" },
-        { type: "Home", number: "(555) 999-1212"}]
-    }
-];
- 
 
-function contato(){
-var ContactsModel = function(contacts) {
-    var self = this;
-    self.contacts = ko.observableArray(ko.utils.arrayMap(contacts, function(contact) {
-        return { firstName: contact.firstName, lastName: contact.lastName, phones: ko.observableArray(contact.phones) };
-    }));
+// var initialData = [
+//     { firstName: "Danny", lastName: "LaRusso", phones: [
+//         { type: "Mobile", number: "(555) 121-2121" },
+//         { type: "Home", number: "(555) 123-4567"}]
+//     },
+//     { firstName: "Sensei", lastName: "Miyagi", phones: [
+//         { type: "Mobile", number: "(555) 444-2222" },
+//         { type: "Home", number: "(555) 999-1212"}]
+//     }
+// ];
+
+// function contato(){
+//     var ContactsModel = function(contacts) {
+//         var self = this;
+//     self.contacts = ko.observableArray(ko.utils.arrayMap(contacts, function(contact) {
+//         return { firstName: contact.firstName, lastName: contact.lastName, phones: ko.observableArray(contact.phones) };
+//     }));
  
-    self.addContact = function() {
-        self.contacts.push({
-            firstName: "",
-            lastName: "",
-            phones: ko.observableArray()
-        });
-    };
+//     self.addContact = function() {
+//         self.contacts.push({
+//             firstName: "",
+//             lastName: "",
+//             phones: ko.observableArray()
+//         });
+//     };
  
-    self.removeContact = function(contact) {
-        self.contacts.remove(contact);
-    };
+//     self.removeContact = function(contact) {
+//         self.contacts.remove(contact);
+//     };
  
-    self.addPhone = function(contact) {
-        contact.phones.push({
-            type: "",
-            number: ""
-        });
-    };
+//     self.addPhone = function(contact) {
+//         contact.phones.push({
+//             type: "",
+//             number: ""
+//         });
+//     };
  
-    self.removePhone = function(phone) {
-        $.each(self.contacts(), function() { this.phones.remove(phone) })
-    };
+//     self.removePhone = function(phone) {
+//         $.each(self.contacts(), function() { this.phones.remove(phone) })
+//     };
  
-    self.save = function() {
-        self.lastSavedJson(JSON.stringify(ko.toJS(self.contacts), null, 2));
-    };
+//     self.save = function() {
+//         self.lastSavedJson(JSON.stringify(ko.toJS(self.contacts), null, 2));
+//     };
  
-    self.lastSavedJson = ko.observable("")
-};
- 
-<<<<<<< HEAD
-ko.applyBindings(new ContactsModel(initialData));}
->>>>>>> e8d3d8c926b9a30621b2782574bcf5269ca4416e
-=======
-ko.applyBindings(new ContactsModel(initialData));}
->>>>>>> e8d3d8c926b9a30621b2782574bcf5269ca4416e
+//     self.lastSavedJson = ko.observable("")
+// };
