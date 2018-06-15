@@ -47,13 +47,13 @@
     <div id="lucas"></div>
     <div id="colab">
         <form data-bind="submit: addItem">
-            <p>Colaboradores</p>
-            <ul data-bind="foreach: pessoa">
-                <li><a href="#" data-bind="click: $parent.removePessoa"><span data-bind="text: nome"></span></a></li>
+            <h2>Colaboradores:</h2>
+            <ul data-bind="foreach: items">
+                <li><span data-bind="text: $data"></span></li>
             </ul>
-            <label for="novo">Faça parte desse time:</label>
-            <input name="novo" data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
-            <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+            <label for="colaborador">Faça parte dessa equipe</label>
+            <input name="colaborador" data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
+            <button type="submit" data-bind="enable: itemToAdd().length > 0">Ajudar</button>
         </form>
     </div>
 </main>
@@ -68,27 +68,6 @@
     <p id="foot">©2018 Undefined | Developed by SI Students | Santos - SP</p>
 </footer>
 
-<script type="text/javascript">
-    var AppViewModel = function () {
-        this.pessoa = ko.observableArray([
-            { nome: 'Grazi' },
-            { nome: 'Janaina' },
-            { nome: 'Khayan' }
-        ]);
-
-        this.addItem = function() {
-            if (this.itemToAdd() != "") {
-                this.pessoa.push(this.itemToAdd());
-                this.itemToAdd("");
-            }
-        }.bind(this);
-        
-        this.removePessoa = function() {
-            this.pessoa.remove(this);
-        }
-    }
- 
-    ko.applyBindings(new AppViewModel());
-</script>
+<script type="text/javascript">colab();</script>
 </body>
 </html>

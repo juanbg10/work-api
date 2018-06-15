@@ -79,6 +79,20 @@ var ClickCounterViewModel = function() {
 /*
  * descrição: Lista de Colaboradores
  * autor: Lucas de Mello Rocha
- * entrada:  
+ * entrada: 
  * saida: 
  */
+function colab() {
+    var SimpleListModel = function(items) {
+        this.items = ko.observableArray(items);
+        this.itemToAdd = ko.observable("");
+        this.addItem = function() {
+            if (this.itemToAdd() != "") {
+                this.items.push(this.itemToAdd());
+                this.itemToAdd("");
+            }
+        }.bind(this);
+    };
+    
+    ko.applyBindings(new SimpleListModel(["Grazi", "Janaina", "Khayan"]));
+}
